@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Form</title>
+<style>
+h1 {color:red;}
+x {color:red;}
+</style>
+</head>
+<body>
+
+	<h1 align="center">Employee Registration Form</h1>
+	<form action="addEmployee" method="get">
+		<table align ="center" border="0" cellpadding="7" cellspacing="10">
+			<tr>
+				<td><label>FirstName:<x>*</x></label></td>
+				<td><input type="text" name="fname" maxlength="50" required/></td>
+			</tr>
+			<tr>
+				<td><label>LastName:</label></td>
+				<td><input type="text" name="lname" maxlength="50" /></td>
+			</tr>
+			<tr>
+				<td><label>Age:<x>*</x></label></td>
+				<td><input type="number" id="age" maxlength="2"  required/></td>
+			</tr>
+
+			<tr>
+				<td><label>Salary:<x>*</x></label></td>
+				<td><input type="number" name="salary" maxlength="5"  required/></td>
+			</tr>
+			<tr>
+				<td><label>Gender:<x>*</x></label></td>
+				<td><label>Male</label> <input type="radio" name="gender"id="male" required="required"/>
+				 <label>Female</label> <input type="radio"name="gender" id="female" required="required"/></td>
+			</tr>
+			<tr>
+				<td><label>Department:<x>*</x></label></td>
+				<td><select name="dept" required="required">
+						<option value="swg">Software</option>
+						<option value="it">IT</option>
+						<option value="finance">Finance</option>
+				</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label>State:<x>*</x></label></td>
+				<td>
+				<select name="state" required="required">
+						<option value="kar">Karnataka</option>
+						<option value="up">UttarPradesh</option>
+						<option value="delhi">New Delhi</option>
+				</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label>City:<x>*</x></label></td>
+				<td><select name="city" required="required">
+						<option value="bang">Bangalore</option>
+						<option value="mysore">Mysore</option>
+						<option value="hyd">Hyderabad</option>
+				</select>
+			</tr>
+			<tr>
+				<td><label>Skills:<x>*</x></label></td>
+				<td><input type="checkbox" name="java" value="Java" /> Java 
+				<input type="checkbox" name="java" value="J2EE" /> J2EE
+				<input type="checkbox" name="java" value="Spring"/>Spring
+				<input type="checkbox" name="java" value="MySQL" /> MySQL
+				</td>
+			</tr>
+			<tr>
+				<td><label>Address:</label></td>
+				<td><textarea name="comment" ></textarea></td>
+			</tr>
+			<tr>
+				<td><input type="reset" Value="Clear" /></td>
+				<td><input type="submit" value="Save" /></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
